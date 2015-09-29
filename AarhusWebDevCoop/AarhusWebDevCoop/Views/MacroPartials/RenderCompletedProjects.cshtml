@@ -1,0 +1,16 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+
+@{
+    var page = Umbraco.Content(1070).Children.OrderBy("createDate descending").Take(2);
+}
+
+<ol>
+
+@foreach (var child in page) {
+        if(child.status == ("Completed")){
+            <li>
+                <a href="@child.Url">@child.Name</a> - <a href="@child.Url">@child.CreateDate</a>
+            </li>
+        }
+}
+</ol>
