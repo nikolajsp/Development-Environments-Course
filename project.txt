@@ -1,0 +1,14 @@
+***GITHUB***
+Git:	https://github.com/nikolajsp/Development-Environments-Course/tree/master/AarhusWebDevCoop
+
+***BACKEND***
+User:	mail@nikolajsp.dk
+Pass:	1234
+
+***ACTIVE MEMBER***
+User:	Batman
+Pass:	1234
+
+***PROSPECT***
+User:	Ironman
+Pass:	1234

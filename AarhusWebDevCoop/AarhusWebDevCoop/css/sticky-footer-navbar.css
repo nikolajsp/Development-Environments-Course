@@ -10,7 +10,7 @@ body {
 }
 .footer {
   position: absolute;
-  bottom: 0;
+  margin-top: 50px;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
@@ -26,7 +26,8 @@ body > .container {
   padding: 60px 15px 0;
 }
 .container .text-muted {
-  margin: 20px 0;
+    margin: 20px 0;
+    text-align: center;
 }
 
 .footer > .container {
@@ -36,4 +37,34 @@ body > .container {
 
 code {
   font-size: 80%;
+}
+
+.intro-header {
+    margin-bottom: 0px!important;
+}
+button#contact-submit {
+    width: 100%;
+}
+
+input#loginModel_Username, input#loginModel_Password {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#kontaktformular label {
+    padding-top: 18px;
+}
+
+ul.dropdown-menu {
+    background-color: rgba(26, 81, 110, 0.90);
+    text-align: center;
+}
+
+.nav li a:hover {
+    color: #555555!important;
+}
+
+h1 {
+    text-align: center;
 }

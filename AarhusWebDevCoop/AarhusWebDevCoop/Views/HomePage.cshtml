@@ -3,7 +3,6 @@
     Layout = "Master.cshtml";
 }
 	
-<h1>@Umbraco.Field("sitetitle")</h1>
 <p>@Umbraco.Field("maincontent")</p>
 	@Umbraco.RenderMacro("RenderCompletedProjects")
 	@CurrentPage.GetGridHtml("forsideGrid")

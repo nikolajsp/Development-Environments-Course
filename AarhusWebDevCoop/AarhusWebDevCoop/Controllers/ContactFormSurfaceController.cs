@@ -25,24 +25,24 @@ namespace AarhusWebDevCoop.Controllers
                 return CurrentUmbracoPage();
             }
             {
-                // sender mail
-                MailMessage message = new MailMessage();
-                message.To.Add("nikolajstorgaardpedersen@gmail.com");
-                message.Subject = model.Subject;
-                message.From = new MailAddress(model.Email, model.Name);
-                message.Body = model.Message + "\n my email is: " + model.Email;
+                //// sender mail
+                //MailMessage message = new MailMessage();
+                //message.To.Add("nikolajstorgaardpedersen@gmail.com");
+                //message.Subject = model.Subject;
+                //message.From = new MailAddress(model.Email, model.Name);
+                //message.Body = model.Message + "\n my email is: " + model.Email;
 
-                // mailopsætning
-                using (SmtpClient smtp = new SmtpClient())
-                {
-                    smtp.DeliveryMethod = SmtpDeliveryMethod.Network; smtp.UseDefaultCredentials = false;
-                    smtp.EnableSsl = true;
-                    smtp.Host = "smtp.gmail.com"; smtp.Port = 587;
-                    smtp.Credentials = new System.Net.NetworkCredential("nikolajstorgaardpedersen@gmail.com", "kode");
-                    smtp.EnableSsl = true;
+                //// mailopsætning
+                //using (SmtpClient smtp = new SmtpClient())
+                //{
+                //    smtp.DeliveryMethod = SmtpDeliveryMethod.Network; smtp.UseDefaultCredentials = false;
+                //    smtp.EnableSsl = true;
+                //    smtp.Host = "smtp.gmail.com"; smtp.Port = 587;
+                //    smtp.Credentials = new System.Net.NetworkCredential("nikolajstorgaardpedersen@gmail.com", "kode");
+                //    smtp.EnableSsl = true;
 
-                    smtp.Send(message);
-                }
+                //    smtp.Send(message);
+                //}
 
                 TempData["success"] = true;
 
